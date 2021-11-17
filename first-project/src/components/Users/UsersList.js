@@ -3,7 +3,7 @@ import React from "react";
 import style from './UsersList.module.css';
 import User from "./User";
 import styles from './User.module.css';
-import Card from "../UI/Card";
+import Card from "../../UI/Card";
 
 
 
@@ -13,7 +13,11 @@ const UsersList = ({ users }) => {
 		content = <p className={styles.li}>No users are yet registered!</p>;
 	} else {
 		content = users.map((user) => {
-			return <User>{user.name}({user.age} years old) </User>
+			return <User
+				name={user.name}
+				age={user.age}
+				key={user.id}
+			></User>
 		});
 	}
 	return (

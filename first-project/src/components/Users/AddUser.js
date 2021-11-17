@@ -3,8 +3,8 @@ import React, { useState } from "react";
 
 import validator from "./validateUser";
 
-import Card from "../UI/Card";
-import Button from "../UI/Button";
+import Card from "../../UI/Card";
+import Button from "../../UI/Button";
 
 import style from './AddUser.module.css';
 
