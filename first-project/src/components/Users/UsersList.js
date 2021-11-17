@@ -3,7 +3,7 @@ import React from "react";
 import style from './UsersList.module.css';
 import User from "./User";
 import styles from './User.module.css';
-import Card from "../../UI/Card";
+import Card from "../UI/Card";
 
 
 
