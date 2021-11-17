@@ -1,7 +1,7 @@
 
 
 const validateUser = (username, age) => {
-	if (username.trim().length === 0) {
+	if (username.trim().length === 0 || username == '') {
 		return `Username should not be an empty field`;
 	};
 
