@@ -12,10 +12,14 @@ import style from './AddUser.module.css';
 const AddUser = (props) => {
 	const [enteredUsername, setEnteredUsername] = useState('');
 	const [enteredAge, setEnteredAge] = useState('');
+	const [error, setError] = useState();
 
 	const addUserHandler = (e) => {
 		e.preventDefault();
-		validator.validateUser(enteredUsername, enteredAge);
+		setError({
+			title: "Invalid input",
+			message: validator.validateUser(enteredUsername, enteredAge)
+		});
 		props.onAddUser(enteredUsername, enteredAge);
 		setEnteredUsername('');
 		setEnteredAge('');
@@ -29,10 +33,13 @@ const AddUser = (props) => {
 		setEnteredAge(e.target.value);
 	};
 
+	const errorHandler = () => {
+		setError(null);
+	};
 
 	return (
 		<div>
-			<ErrorModal title="An Error Occured" message="Something went wrong"></ErrorModal>
+			{error && <ErrorModal onConfirm={errorHandler} title={error.title} message={error.message}></ErrorModal>}
 			<Card className={style.input}>
 				<form onSubmit={addUserHandler}>
 					<label htmlFor="username">Username</label>
