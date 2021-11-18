@@ -17,8 +17,6 @@ function App() {
     setCartIsShown(false);
   };
 
-  console.log(CartProvider)
-
   return (
     <CartProvider>
       {cartIsShown && <Cart onClose={hideCartHandler} />}
