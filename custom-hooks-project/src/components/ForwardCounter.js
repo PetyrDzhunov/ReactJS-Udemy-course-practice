@@ -2,7 +2,7 @@ import Card from './Card';
 import useCounter from '../hooks/use-counter';
 
 const ForwardCounter = () => {
-  const counter = useCounter('increment');
+  const counter = useCounter(true);
   return <Card>{counter}</Card>;
 };
 
