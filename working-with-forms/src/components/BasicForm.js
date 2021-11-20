@@ -4,7 +4,10 @@ import useInput from '../hooks/use-input';
 const isNotEmpty = value => value.trim() !== '';
 const isEmail = value => value.includes('@') && value.trim() !== '';
 
+
+
 const BasicForm = (props) => {
+
   const {
     value: firstNameValue,
     isValid: firstNameIsValid,
@@ -67,7 +70,6 @@ const BasicForm = (props) => {
           <input type='text' id='name' value={lastNameValue} onChange={lastNameChangeHandler} onBlur={lastNameBlurHandler} />
           {lastNameHasError && <p className='error-text'>Please enter a last name.</p>}
         </div>
-
       </div>
 
       <div className={emailClasses}>
