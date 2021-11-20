@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback } from 'react';
 
 import Tasks from './components/Tasks/Tasks';
 import NewTask from './components/NewTask/NewTask';
-import useHttp from './components/hooks/use-http';
+import useHttp from './hooks/use-http';
 
 
 function App() {
