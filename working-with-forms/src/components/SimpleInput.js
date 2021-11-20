@@ -1,4 +1,3 @@
-import { useState } from "react";
 import useInput from "../hooks/use-input";
 // add second input where we fetch the email of the user
 // get the value and validate it if it is a valid email adress
