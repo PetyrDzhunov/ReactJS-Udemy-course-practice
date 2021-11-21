@@ -40,6 +40,7 @@ const Cart = (props) => {
 		});
 		setIsSubmitting(false);
 		setDidSubmit(true);
+		cartCtx.clearCart();
 	};
 
 	const cartItemAddHandler = (item) => {
@@ -84,7 +85,7 @@ const Cart = (props) => {
 
 	const didSubmitModalContent = (
 		<>
-			<p>Sucessfully sent the order!</p>;
+			<p>Sucessfully sent the order!</p>
 			<div className={classes.actions}>
 				<button onClick={props.onClose} className={classes.button}>Close</button>
 			</div>
