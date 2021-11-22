@@ -8,7 +8,7 @@ import { uiActions } from './store/ui-slice';
 import { useDispatch } from 'react-redux';
 import Notification from './components/UI/Notification';
 
-
+let isInitial = true;
 
 function App() {
   const { cartIsVisible } = useSelector(state => state.ui);
@@ -16,7 +16,7 @@ function App() {
   const dispatch = useDispatch();
   const notification = useSelector(state => state.ui.notification);
 
-  let isInitial = true;
+
 
   useEffect(() => {
     const sendCartData = async () => {
@@ -43,7 +43,7 @@ function App() {
     };
     if (isInitial) {
       isInitial = false;
-      return
+      return;
     };
 
     sendCartData().catch(error => {
