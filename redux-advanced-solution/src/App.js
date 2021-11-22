@@ -16,6 +16,8 @@ function App() {
   const dispatch = useDispatch();
   const notification = useSelector(state => state.ui.notification);
 
+
+
   useEffect(() => {
     dispatch(fetchCartData());
   }, [dispatch]);
@@ -23,12 +25,12 @@ function App() {
 
   useEffect(() => {
     if (isInitial) {
-
       isInitial = false;
       return;
     };
-
-    dispatch(sendCartData(cart));
+    if (cart.changed) {
+      dispatch(sendCartData(cart));
+    };
   }, [cart, dispatch]);
 
   return (
