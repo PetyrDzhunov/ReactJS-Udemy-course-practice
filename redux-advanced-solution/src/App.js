@@ -15,7 +15,7 @@ function App() {
       method: 'PUT',
       body: JSON.stringify(cart)
     })
-  }, [cart])
+  }, [cart]);
 
   return (
     <Layout>
