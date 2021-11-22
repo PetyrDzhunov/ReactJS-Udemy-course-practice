@@ -1,0 +1,7 @@
+//my cart - toggles up or out the cart
+
+// if we press add to cart we add it to the cart and if it's already
+// part of the cart we just increaes the quantity of the existing item
+
+// + and  - buttons in the cart we want to control the quantity
+
