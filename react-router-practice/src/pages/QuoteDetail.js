@@ -2,7 +2,9 @@
 
 
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Route } from 'react-router-dom';
+import Comment from '../components/comments/Comments';
+
 
 const QuoteDetail = () => {
 	const params = useParams();
@@ -10,7 +12,9 @@ const QuoteDetail = () => {
 	return (
 		<>
 			<h1>Quote Details Page</h1>
-			<p>Current params are {params.quoteId}</p>
+			<Route path={`/quotes/${params.quoteId}/comments`}>
+				<p>Current params are {params.quoteId}</p>
+			</Route>
 		</>
 	);
 }
