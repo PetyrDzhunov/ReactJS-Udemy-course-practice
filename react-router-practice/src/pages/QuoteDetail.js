@@ -10,7 +10,7 @@ import { getSingleQuote } from '../lib/api';
 
 const QuoteDetail = () => {
 	const params = useParams();
-	const quote = DUMMY_QUOTES.find((currQuote) => currQuote.id === params.quoteId);
+	// const quote = get.find((currQuote) => currQuote.id === params.quoteId);
 	const match = useRouteMatch();
 	const { quoteId } = params;
 
