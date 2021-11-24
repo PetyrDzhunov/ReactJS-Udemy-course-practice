@@ -28,8 +28,6 @@ const Comments = () => {
     sendRequest(quoteId);
   }, [sendRequest, quoteId]);
 
-
-
   let comments;
 
   if (status === 'pending') {
