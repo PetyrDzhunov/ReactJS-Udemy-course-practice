@@ -25,12 +25,11 @@ function App() {
           <NewQuote />
         </Route>
 
-
+        <Route path='*'>
+          <Notfound />
+        </Route>
 
       </Switch>
-      <Route path='*'>
-        <Notfound />
-      </Route>
     </Layout>
   );
 }
