@@ -8,10 +8,11 @@ import Comments from '../components/comments/Comments';
 
 const QuoteDetail = () => {
 	const params = useParams();
-	console.log(params);
+
 	return (
 		<>
 			<h1>Quote Details Page</h1>
+			<h1>Params are {params.quoteId}</h1>
 			<Route path={`/quotes/${params.quoteId}/comments`}>
 				<Comments />
 			</Route>
