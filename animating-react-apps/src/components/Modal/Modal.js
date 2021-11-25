@@ -19,7 +19,12 @@ const modal = (props) => {
     return (
         <CSSTransition
             timeout={animationTiming}
-            classNames='fade-slide'
+            classNames={{
+                enter: '',
+                enterActive: 'ModalOpen',
+                exit: '',
+                exitActive: 'ModalClosed',
+            }}
         >
             <div className={cssClasses.join(' ')}>
                 <h1>A Modal</h1>
