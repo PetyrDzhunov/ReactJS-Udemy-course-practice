@@ -64,4 +64,5 @@ function insertAtBeginningg<T>(array: T[], value: T) {
 const demoArray = [1, 2, 3];
 const updatedArray = insertAtBeginningg(demoArray, -1);
 const stringArray = insertAtBeginningg(['a', 'b', 'c'], 'd');
-console.log(updatedArray);
+
+
