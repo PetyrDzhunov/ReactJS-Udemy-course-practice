@@ -110,7 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _NewMeetupForm_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NewMeetupForm.module.css */ "./components/meetups/NewMeetupForm.module.css");
 /* harmony import */ var _NewMeetupForm_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_NewMeetupForm_module_css__WEBPACK_IMPORTED_MODULE_3__);
 
-var _jsxFileName = "D:\\programirane-front-end\\reactJS-udemy-course\\nextJS project from udemy course\\components\\meetups\\NewMeetupForm.js";
+var _jsxFileName = "D:\\programirane-front-end\\reactJS-udemy-course\\nextJS-project\\components\\meetups\\NewMeetupForm.js";
 
 
 
@@ -293,7 +293,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Card_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Card.module.css */ "./components/ui/Card.module.css");
 /* harmony import */ var _Card_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Card_module_css__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "D:\\programirane-front-end\\reactJS-udemy-course\\nextJS project from udemy course\\components\\ui\\Card.js";
+var _jsxFileName = "D:\\programirane-front-end\\reactJS-udemy-course\\nextJS-project\\components\\ui\\Card.js";
 
 
 function Card(props) {
@@ -340,7 +340,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_meetups_NewMeetupForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/meetups/NewMeetupForm */ "./components/meetups/NewMeetupForm.js");
 
-var _jsxFileName = "D:\\programirane-front-end\\reactJS-udemy-course\\nextJS project from udemy course\\pages\\new-meetup\\index.js";
+var _jsxFileName = "D:\\programirane-front-end\\reactJS-udemy-course\\nextJS-project\\pages\\new-meetup\\index.js";
 
 function newMeetupPage() {
   function addMeetupHandler(enteredMeetupData) {

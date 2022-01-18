@@ -13,11 +13,29 @@ export default function HomePage(props) {
 
 };
 
-export async function getStaticProps() {
-	//fetch data from an API;
+// export async function getStaticProps() {
+// 	//fetch data from an API;
+// 	return {
+// 		props: {
+// 			meetups: DUMMY_MEETUPS
+// 		},
+// 		revalidate: 10
+// 	};
+// };
+
+
+export async function getServerSideProps(context) {
+	// the difference from getStaticProps() is that  this page
+	// is now pre-generated for every incomming request.
+	// it runs on the server after deployment , not  during build process;
+
+	// const req = context.req;
+	// const res = context.res;
+
+	// fetch data from an API;
 	return {
 		props: {
 			meetups: DUMMY_MEETUPS
 		}
-	};
+	}
 };
